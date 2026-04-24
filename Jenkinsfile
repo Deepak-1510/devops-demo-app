@@ -4,7 +4,7 @@ pipeline{
   stages{
     stage('Build'){
       steps{
-        h 'docker build -t devops-demo .'
+        sh 'docker build -t devops-demo .'
       }
     }
     stage('Run'){
